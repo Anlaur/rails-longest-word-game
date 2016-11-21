@@ -1,0 +1,15 @@
+<h1>Play#game</h1>
+<p>Find me in app/views/play/game.html.erb</p>
+
+<%= @grid %>
+<form action="/score">
+  <label for="question">Give your answer</label>
+  <input type="text" id="question" name="guess" placeholder="what's the longest word?">
+  <input type=hidden name="grid" value="<%= @grid%>">
+  <input type=hidden name="start" value="<%= @start%>">
+  <input type="submit" value="Go on!">
+</form>
+
+
+
+
